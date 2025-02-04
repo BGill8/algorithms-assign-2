@@ -20,53 +20,43 @@ def read_cost_matrix(filename):
     return loss_matrix
 
 # Needleman-Wunsch algorithm for sequence alignment
-def needleman_wunsch(seq1, seq2, loss_matrix, gap_penalty=1):
-    m, n = len(seq1), len(seq2)
+def needleman_wunsch(seq1, seq2, loss_matrix, gap_penalty=1, switch_penalty=2):
+    n, m = len(seq1), len(seq2)
+    dp = np.zeros((n+1, m+1), dtype=int)
 
     # Initialize DP table
-    dp = np.zeros((m + 1, n + 1))
-    traceback = np.zeros((m + 1, n + 1), dtype=int)
-
-    # Fill DP table
-    for i in range(1, m + 1):
+    for i in range(1, n+1):
         dp[i][0] = dp[i-1][0] + gap_penalty
-    for j in range(1, n + 1):
+    for j in range(1, m+1):
         dp[0][j] = dp[0][j-1] + gap_penalty
 
-    for i in range(1, m + 1):
-        for j in range(1, n + 1):
-            match = dp[i-1][j-1] + loss_matrix.get((seq1[i-1], seq2[j-1]), float('inf'))
+    # Fill DP table
+    for i in range(1, n+1):
+        for j in range(1, m+1):
+            match = dp[i-1][j-1] + loss_matrix[(seq1[i-1], seq2[j-1])]
             delete = dp[i-1][j] + gap_penalty
             insert = dp[i][j-1] + gap_penalty
+            dp[i][j] = max(match, delete, insert)
 
-            dp[i][j] = min(match, delete, insert)
-
-            if dp[i][j] == match:
-                traceback[i][j] = 1  # Diagonal (match/mismatch)
-            elif dp[i][j] == delete:
-                traceback[i][j] = 2  # Up (gap in seq2)
-            else:
-                traceback[i][j] = 3  # Left (gap in seq1)
-
-    # Traceback to find alignment
-    aligned_seq1, aligned_seq2 = "", ""
-    i, j = m, n
+    # Traceback
+    i, j = n, m
+    aligned_seq1, aligned_seq2 = '', ''
     while i > 0 or j > 0:
-        if traceback[i][j] == 1:
+        if i > 0 and j > 0 and dp[i][j] == dp[i-1][j-1] + loss_matrix[(seq1[i-1], seq2[j-1])]:
             aligned_seq1 = seq1[i-1] + aligned_seq1
             aligned_seq2 = seq2[j-1] + aligned_seq2
             i -= 1
             j -= 1
-        elif traceback[i][j] == 2:
+        elif i > 0 and dp[i][j] == dp[i-1][j] + gap_penalty:
             aligned_seq1 = seq1[i-1] + aligned_seq1
-            aligned_seq2 = "-" + aligned_seq2
+            aligned_seq2 = '-' + aligned_seq2
             i -= 1
         else:
-            aligned_seq1 = "-" + aligned_seq1
+            aligned_seq1 = '-' + aligned_seq1
             aligned_seq2 = seq2[j-1] + aligned_seq2
             j -= 1
 
-    return aligned_seq1, aligned_seq2, dp[m][n]
+    return aligned_seq1, aligned_seq2, dp[n][m]
 
 # Read multiple sequence pairs from file
 def read_sequences(filename):
