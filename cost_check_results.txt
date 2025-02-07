@@ -1,100 +1,100 @@
-Line 1: Primary mismatch. Computed: 296, Reported: 235.0
-Line 2: Primary mismatch. Computed: 167, Reported: 135.0
-Line 3: Primary mismatch. Computed: 216, Reported: 176.0
-Line 4: Primary mismatch. Computed: 281, Reported: 199.0
-Line 5: Primary mismatch. Computed: 267, Reported: 210.0
-Line 6: Primary mismatch. Computed: 383, Reported: 294.0
-Line 7: Primary mismatch. Computed: 362, Reported: 297.0
-Line 8: Primary mismatch. Computed: 490, Reported: 409.0
-Line 9: Primary mismatch. Computed: 306, Reported: 236.0
-Line 10: Primary mismatch. Computed: 320, Reported: 259.0
-Line 11: Primary mismatch. Computed: 339, Reported: 254.0
-Line 12: Primary mismatch. Computed: 314, Reported: 232.0
-Line 13: Primary mismatch. Computed: 256, Reported: 199.0
-Line 14: Primary mismatch. Computed: 395, Reported: 312.0
-Line 15: Primary mismatch. Computed: 417, Reported: 344.0
-Line 16: Primary mismatch. Computed: 320, Reported: 244.0
-Line 17: Primary mismatch. Computed: 335, Reported: 266.0
-Line 18: Primary mismatch. Computed: 544, Reported: 445.0
-Line 19: Primary mismatch. Computed: 320, Reported: 247.0
-Line 20: Primary mismatch. Computed: 315, Reported: 247.0
-Line 21: Primary mismatch. Computed: 319, Reported: 240.0
-Line 22: Primary mismatch. Computed: 427, Reported: 341.0
-Line 23: Primary mismatch. Computed: 337, Reported: 279.0
-Line 24: Primary mismatch. Computed: 475, Reported: 387.0
-Line 25: Primary mismatch. Computed: 236, Reported: 209.0
-Line 26: Primary mismatch. Computed: 272, Reported: 214.0
-Line 27: Primary mismatch. Computed: 215, Reported: 176.0
-Line 28: Primary mismatch. Computed: 335, Reported: 262.0
-Line 29: Primary mismatch. Computed: 201, Reported: 156.0
-Line 30: Primary mismatch. Computed: 393, Reported: 327.0
-Line 31: Primary mismatch. Computed: 157, Reported: 126.0
-Line 32: Primary mismatch. Computed: 421, Reported: 339.0
-Line 33: Primary mismatch. Computed: 188, Reported: 148.0
-Line 34: Primary mismatch. Computed: 466, Reported: 375.0
-Line 35: Primary mismatch. Computed: 281, Reported: 227.0
-Line 36: Primary mismatch. Computed: 261, Reported: 215.0
-Line 37: Primary mismatch. Computed: 446, Reported: 352.0
-Line 38: Primary mismatch. Computed: 506, Reported: 428.0
-Line 39: Primary mismatch. Computed: 233, Reported: 176.0
-Line 40: Primary mismatch. Computed: 501, Reported: 393.0
-Line 41: Primary mismatch. Computed: 371, Reported: 304.0
-Line 42: Primary mismatch. Computed: 328, Reported: 228.0
-Line 43: Primary mismatch. Computed: 253, Reported: 201.0
-Line 44: Primary mismatch. Computed: 240, Reported: 184.0
-Line 45: Primary mismatch. Computed: 196, Reported: 155.0
-Line 46: Primary mismatch. Computed: 352, Reported: 260.0
-Line 47: Primary mismatch. Computed: 418, Reported: 338.0
-Line 48: Primary mismatch. Computed: 492, Reported: 381.0
-Line 49: Primary mismatch. Computed: 201, Reported: 150.0
-Line 50: Primary mismatch. Computed: 362, Reported: 292.0
-Line 51: Primary mismatch. Computed: 265, Reported: 211.0
-Line 52: Primary mismatch. Computed: 228, Reported: 197.0
-Line 53: Primary mismatch. Computed: 336, Reported: 274.0
-Line 54: Primary mismatch. Computed: 177, Reported: 138.0
-Line 55: Primary mismatch. Computed: 449, Reported: 347.0
-Line 56: Primary mismatch. Computed: 259, Reported: 202.0
-Line 57: Primary mismatch. Computed: 453, Reported: 383.0
-Line 58: Primary mismatch. Computed: 226, Reported: 177.0
-Line 59: Primary mismatch. Computed: 156, Reported: 130.0
-Line 60: Primary mismatch. Computed: 245, Reported: 201.0
-Line 61: Primary mismatch. Computed: 448, Reported: 367.0
-Line 62: Primary mismatch. Computed: 437, Reported: 335.0
-Line 63: Primary mismatch. Computed: 524, Reported: 440.0
-Line 64: Primary mismatch. Computed: 403, Reported: 310.0
-Line 65: Primary mismatch. Computed: 452, Reported: 373.0
-Line 66: Primary mismatch. Computed: 558, Reported: 469.0
-Line 67: Primary mismatch. Computed: 298, Reported: 231.0
-Line 68: Primary mismatch. Computed: 482, Reported: 391.0
-Line 69: Primary mismatch. Computed: 213, Reported: 167.0
-Line 70: Primary mismatch. Computed: 402, Reported: 323.0
-Line 71: Primary mismatch. Computed: 297, Reported: 246.0
-Line 72: Primary mismatch. Computed: 326, Reported: 269.0
-Line 73: Primary mismatch. Computed: 255, Reported: 209.0
-Line 74: Primary mismatch. Computed: 583, Reported: 481.0
-Line 75: Primary mismatch. Computed: 225, Reported: 171.0
-Line 76: Primary mismatch. Computed: 373, Reported: 297.0
-Line 77: Primary mismatch. Computed: 460, Reported: 374.0
-Line 78: Primary mismatch. Computed: 449, Reported: 369.0
-Line 79: Primary mismatch. Computed: 356, Reported: 283.0
-Line 80: Primary mismatch. Computed: 398, Reported: 309.0
-Line 81: Primary mismatch. Computed: 425, Reported: 360.0
-Line 82: Primary mismatch. Computed: 441, Reported: 379.0
-Line 83: Primary mismatch. Computed: 316, Reported: 232.0
-Line 84: Primary mismatch. Computed: 327, Reported: 256.0
-Line 85: Primary mismatch. Computed: 188, Reported: 154.0
-Line 86: Primary mismatch. Computed: 287, Reported: 230.0
-Line 87: Primary mismatch. Computed: 403, Reported: 314.0
-Line 88: Primary mismatch. Computed: 130, Reported: 90.0
-Line 89: Primary mismatch. Computed: 570, Reported: 460.0
-Line 90: Primary mismatch. Computed: 450, Reported: 352.0
-Line 91: Primary mismatch. Computed: 530, Reported: 428.0
-Line 92: Primary mismatch. Computed: 390, Reported: 306.0
-Line 93: Primary mismatch. Computed: 445, Reported: 355.0
-Line 94: Primary mismatch. Computed: 481, Reported: 369.0
-Line 95: Primary mismatch. Computed: 273, Reported: 213.0
-Line 96: Primary mismatch. Computed: 337, Reported: 286.0
-Line 97: Primary mismatch. Computed: 428, Reported: 338.0
-Line 98: Primary mismatch. Computed: 368, Reported: 285.0
-Line 99: Primary mismatch. Computed: 320, Reported: 262.0
-Line 100: Primary mismatch. Computed: 315, Reported: 235.0
+Line 1: Primary cost check passed. | Solution check: Correct.
+Line 2: Primary cost check passed. | Solution check: Correct.
+Line 3: Primary cost check passed. | Solution check: Correct.
+Line 4: Primary cost check passed. | Solution check: Correct.
+Line 5: Primary cost check passed. | Solution check: Correct.
+Line 6: Primary cost check passed. | Solution check: Correct.
+Line 7: Primary cost check passed. | Solution check: Correct.
+Line 8: Primary cost check passed. | Solution check: Correct.
+Line 9: Primary cost check passed. | Solution check: Correct.
+Line 10: Primary cost check passed. | Solution check: Correct.
+Line 11: Primary cost check passed. | Solution check: Correct.
+Line 12: Primary cost check passed. | Solution check: Correct.
+Line 13: Primary cost check passed. | Solution check: Correct.
+Line 14: Primary cost check passed. | Solution check: Correct.
+Line 15: Primary cost check passed. | Solution check: Correct.
+Line 16: Primary cost check passed. | Solution check: Correct.
+Line 17: Primary cost check passed. | Solution check: Correct.
+Line 18: Primary cost check passed. | Solution check: Correct.
+Line 19: Primary cost check passed. | Solution check: Correct.
+Line 20: Primary cost check passed. | Solution check: Correct.
+Line 21: Primary cost check passed. | Solution check: Correct.
+Line 22: Primary cost check passed. | Solution check: Correct.
+Line 23: Primary cost check passed. | Solution check: Correct.
+Line 24: Primary cost check passed. | Solution check: Correct.
+Line 25: Primary cost check passed. | Solution check: Correct.
+Line 26: Primary cost check passed. | Solution check: Correct.
+Line 27: Primary cost check passed. | Solution check: Correct.
+Line 28: Primary cost check passed. | Solution check: Correct.
+Line 29: Primary cost check passed. | Solution check: Correct.
+Line 30: Primary cost check passed. | Solution check: Correct.
+Line 31: Primary cost check passed. | Solution check: Correct.
+Line 32: Primary cost check passed. | Solution check: Correct.
+Line 33: Primary cost check passed. | Solution check: Correct.
+Line 34: Primary cost check passed. | Solution check: Correct.
+Line 35: Primary cost check passed. | Solution check: Correct.
+Line 36: Primary cost check passed. | Solution check: Correct.
+Line 37: Primary cost check passed. | Solution check: Correct.
+Line 38: Primary cost check passed. | Solution check: Correct.
+Line 39: Primary cost check passed. | Solution check: Correct.
+Line 40: Primary cost check passed. | Solution check: Correct.
+Line 41: Primary cost check passed. | Solution check: Correct.
+Line 42: Primary cost check passed. | Solution check: Correct.
+Line 43: Primary cost check passed. | Solution check: Correct.
+Line 44: Primary cost check passed. | Solution check: Correct.
+Line 45: Primary cost check passed. | Solution check: Correct.
+Line 46: Primary cost check passed. | Solution check: Correct.
+Line 47: Primary cost check passed. | Solution check: Correct.
+Line 48: Primary cost check passed. | Solution check: Correct.
+Line 49: Primary cost check passed. | Solution check: Correct.
+Line 50: Primary cost check passed. | Solution check: Correct.
+Line 51: Primary cost check passed. | Solution check: Correct.
+Line 52: Primary cost check passed. | Solution check: Correct.
+Line 53: Primary cost check passed. | Solution check: Correct.
+Line 54: Primary cost check passed. | Solution check: Correct.
+Line 55: Primary cost check passed. | Solution check: Correct.
+Line 56: Primary cost check passed. | Solution check: Correct.
+Line 57: Primary cost check passed. | Solution check: Correct.
+Line 58: Primary cost check passed. | Solution check: Correct.
+Line 59: Primary cost check passed. | Solution check: Correct.
+Line 60: Primary cost check passed. | Solution check: Correct.
+Line 61: Primary cost check passed. | Solution check: Correct.
+Line 62: Primary cost check passed. | Solution check: Correct.
+Line 63: Primary cost check passed. | Solution check: Correct.
+Line 64: Primary cost check passed. | Solution check: Correct.
+Line 65: Primary cost check passed. | Solution check: Correct.
+Line 66: Primary cost check passed. | Solution check: Correct.
+Line 67: Primary cost check passed. | Solution check: Correct.
+Line 68: Primary cost check passed. | Solution check: Correct.
+Line 69: Primary cost check passed. | Solution check: Correct.
+Line 70: Primary cost check passed. | Solution check: Correct.
+Line 71: Primary cost check passed. | Solution check: Correct.
+Line 72: Primary cost check passed. | Solution check: Correct.
+Line 73: Primary cost check passed. | Solution check: Correct.
+Line 74: Primary cost check passed. | Solution check: Correct.
+Line 75: Primary cost check passed. | Solution check: Correct.
+Line 76: Primary cost check passed. | Solution check: Correct.
+Line 77: Primary cost check passed. | Solution check: Correct.
+Line 78: Primary cost check passed. | Solution check: Correct.
+Line 79: Primary cost check passed. | Solution check: Correct.
+Line 80: Primary cost check passed. | Solution check: Correct.
+Line 81: Primary cost check passed. | Solution check: Correct.
+Line 82: Primary cost check passed. | Solution check: Correct.
+Line 83: Primary cost check passed. | Solution check: Correct.
+Line 84: Primary cost check passed. | Solution check: Correct.
+Line 85: Primary cost check passed. | Solution check: Correct.
+Line 86: Primary cost check passed. | Solution check: Correct.
+Line 87: Primary cost check passed. | Solution check: Correct.
+Line 88: Primary cost check passed. | Solution check: Correct.
+Line 89: Primary cost check passed. | Solution check: Correct.
+Line 90: Primary cost check passed. | Solution check: Correct.
+Line 91: Primary cost check passed. | Solution check: Correct.
+Line 92: Primary cost check passed. | Solution check: Correct.
+Line 93: Primary cost check passed. | Solution check: Correct.
+Line 94: Primary cost check passed. | Solution check: Correct.
+Line 95: Primary cost check passed. | Solution check: Correct.
+Line 96: Primary cost check passed. | Solution check: Correct.
+Line 97: Primary cost check passed. | Solution check: Correct.
+Line 98: Primary cost check passed. | Solution check: Correct.
+Line 99: Primary cost check passed. | Solution check: Correct.
+Line 100: Primary cost check passed. | Solution check: Correct.

@@ -1,9 +1,9 @@
 import random
 import time
-from solution import needleman_wunsch, read_cost_matrix
+from solution import sequence_alignment, read_cost_matrix
 import matplotlib.pyplot as plt
 
-# Generate random sequences
+#generate random sequences
 def generate_random_sequences(lengths, num_pairs=10):
     characters = ['A', 'C', 'G', 'T']
     sequence_pairs = {length: [] for length in lengths}
@@ -31,7 +31,7 @@ def measure_runtime(sequence_pairs, loss_matrix):
     for length, pairs in sequence_pairs.items():
         for seq1, seq2 in pairs:
             start_time = time.time()
-            needleman_wunsch(seq1, seq2, loss_matrix)
+            sequence_alignment(seq1, seq2, loss_matrix)
             end_time = time.time()
             runtimes[length].append(end_time - start_time)
 
@@ -59,7 +59,7 @@ def main():
     average_runtimes = measure_runtime(sequence_pairs, loss_matrix)
 
     input_sizes = list(average_runtimes.keys())
-    results = {'Needleman-Wunsch': list(average_runtimes.values())}
+    results = {'Sequence Alignment Algorithm': list(average_runtimes.values())}
 
     plot_results(input_sizes, results)
 

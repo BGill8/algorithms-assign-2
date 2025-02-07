@@ -1,7 +1,7 @@
 import sys
 import numpy as np
 
-# Read cost matrix from file
+#read cost matrix from file
 def read_cost_matrix(filename):
     try:
         with open(filename, 'r') as f:
@@ -11,14 +11,14 @@ def read_cost_matrix(filename):
         sys.exit(1)
 
     loss_matrix = {}
-    symbols = lines[0].strip().split(',')[1:]  # First row: column headers (Y symbols)
+    symbols = lines[0].strip().split(',')[1:]  #first row: column headers (Y symbols)
 
     for line in lines[1:]:
         parts = line.strip().split(',')
         if len(parts) != len(symbols) + 1:
             print(f"Error: Invalid format in cost matrix file {filename}")
             sys.exit(1)
-        x_symbol = parts[0]  # Row header (X symbol)
+        x_symbol = parts[0]  #row header (X symbol)
         costs = list(map(int, parts[1:]))
 
         for y_symbol, cost in zip(symbols, costs):
@@ -26,8 +26,8 @@ def read_cost_matrix(filename):
 
     return loss_matrix
 
-# Needleman-Wunsch algorithm for sequence alignment
-def needleman_wunsch(seq1, seq2, loss_matrix):
+# sequence_alignment algorithm for sequence alignment
+def sequence_alignment(seq1, seq2, loss_matrix):
     n, m = len(seq1), len(seq2)
     dp = np.zeros((n+1, m+1), dtype=int)
 
@@ -37,7 +37,7 @@ def needleman_wunsch(seq1, seq2, loss_matrix):
     for j in range(1, m+1):
         dp[0][j] = dp[0][j-1] + loss_matrix[('-', seq2[j-1])]
 
-    # Fill DP table
+    #fill DP table
     for i in range(1, n+1):
         for j in range(1, m+1):
             match = dp[i-1][j-1] + loss_matrix[(seq1[i-1], seq2[j-1])]
@@ -45,7 +45,7 @@ def needleman_wunsch(seq1, seq2, loss_matrix):
             insert = dp[i][j-1] + loss_matrix[('-', seq2[j-1])]
             dp[i][j] = min(match, delete, insert)
 
-    # Traceback
+    #traceback functionality
     i, j = n, m
     aligned_seq1, aligned_seq2 = '', ''
     while i > 0 or j > 0:
@@ -65,7 +65,7 @@ def needleman_wunsch(seq1, seq2, loss_matrix):
 
     return aligned_seq1, aligned_seq2, dp[n][m]
 
-# Read multiple sequence pairs from file
+#read multiple sequence pairs from file
 def read_sequences(filename):
     sequences = []
     try:
@@ -88,17 +88,17 @@ def main():
     cost_file = "imp2cost.txt"
     output_file = "imp2output.txt"
 
-    # Read sequences
+    #read sequences
     sequence_pairs = read_sequences(seq_file)
 
-    # Read cost matrix
+    #read cost matrix
     loss_matrix = read_cost_matrix(cost_file)
 
-    # Process each sequence pair
+    #process each sequence pair
     try:
         with open(output_file, 'w') as f:
             for seq1, seq2 in sequence_pairs:
-                aligned_seq1, aligned_seq2, cost = needleman_wunsch(seq1, seq2, loss_matrix)
+                aligned_seq1, aligned_seq2, cost = sequence_alignment(seq1, seq2, loss_matrix)
                 f.write(f"{aligned_seq1},{aligned_seq2}:{cost}\n")
     except IOError:
         print(f"Error: Could not write to file {output_file}")
