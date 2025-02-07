@@ -9,7 +9,7 @@ To check cost results, run:
 
 
 In case you want to see how random inputs are generated, just run:
-pythhon create_inputs.py
+python create_inputs.py
 
 
 Thank you,
